@@ -19,7 +19,7 @@ import br.com.sts.ddum.model.springsecurity.entities.User;
 
 import com.mysema.query.BooleanBuilder;
 
-//import br.com.sts.ddum.domain.entities.QUserSystem;
+//import br.com.sts.ddum.model.entities.QUserSystem;
 
 @Repository
 public class UserRepositoryImpl extends QueryDslJpaRepository<User, Long>

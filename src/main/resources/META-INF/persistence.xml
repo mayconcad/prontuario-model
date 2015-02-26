@@ -10,7 +10,7 @@
 			<property name="hibernate.show_sql" value="true" />
 			<property name="hibernate.format_sql" value="true" />
 			<property name="hibernate.ejb.interceptor"
-				value="br.com.sts.ddum.domain.interceptors.SystemInterceptor" />
+				value="br.com.sts.ddum.model.interceptors.SystemInterceptor" />
 		</properties>
 
 	</persistence-unit>
