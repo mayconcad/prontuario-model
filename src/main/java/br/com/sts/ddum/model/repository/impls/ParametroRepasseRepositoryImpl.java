@@ -12,8 +12,8 @@ import org.springframework.data.jpa.repository.support.QueryDslJpaRepository;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import br.com.sts.ddum.domain.entities.QParametroRepasse;
 import br.com.sts.ddum.model.entities.ParametroRepasse;
+import br.com.sts.ddum.model.entities.QParametroRepasse;
 import br.com.sts.ddum.model.entities.SegmentoEnum;
 import br.com.sts.ddum.model.repository.interfaces.ParametroRepasseRepository;
 

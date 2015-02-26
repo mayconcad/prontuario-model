@@ -13,8 +13,8 @@ import org.springframework.data.jpa.repository.support.QueryDslJpaRepository;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Repository;
 
-import br.com.sts.ddum.domain.springsecurity.entities.QUser;
 import br.com.sts.ddum.model.repository.interfaces.UserRepository;
+import br.com.sts.ddum.model.springsecurity.entities.QUser;
 import br.com.sts.ddum.model.springsecurity.entities.User;
 
 import com.mysema.query.BooleanBuilder;

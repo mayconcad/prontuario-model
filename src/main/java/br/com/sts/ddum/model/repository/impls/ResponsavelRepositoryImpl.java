@@ -11,7 +11,7 @@ import org.springframework.data.jpa.repository.support.QueryDslJpaRepository;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import br.com.sts.ddum.domain.entities.QResponsavel;
+import br.com.sts.ddum.model.entities.QResponsavel;
 import br.com.sts.ddum.model.entities.Responsavel;
 import br.com.sts.ddum.model.repository.interfaces.ResponsavelRepository;
 

@@ -11,8 +11,8 @@ import org.springframework.data.jpa.repository.support.QueryDslJpaRepository;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import br.com.sts.ddum.domain.entities.QAtividadeContabil;
 import br.com.sts.ddum.model.entities.AtividadeContabil;
+import br.com.sts.ddum.model.entities.QAtividadeContabil;
 import br.com.sts.ddum.model.repository.interfaces.AtividadeContabilRepository;
 
 import com.mysema.query.BooleanBuilder;

@@ -10,8 +10,8 @@ import org.springframework.data.jpa.repository.support.JpaMetamodelEntityInforma
 import org.springframework.data.jpa.repository.support.QueryDslJpaRepository;
 import org.springframework.stereotype.Repository;
 
-import br.com.sts.ddum.domain.springsecurity.entities.QRole;
 import br.com.sts.ddum.model.repository.interfaces.RoleRepository;
+import br.com.sts.ddum.model.springsecurity.entities.QRole;
 import br.com.sts.ddum.model.springsecurity.entities.Role;
 
 import com.mysema.query.BooleanBuilder;

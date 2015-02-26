@@ -13,8 +13,8 @@ import org.springframework.data.jpa.repository.support.QueryDslJpaRepository;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import br.com.sts.ddum.domain.entities.QPrestacaoConta;
 import br.com.sts.ddum.model.entities.PrestacaoConta;
+import br.com.sts.ddum.model.entities.QPrestacaoConta;
 import br.com.sts.ddum.model.repository.interfaces.PrestacaoContaRepository;
 
 import com.mysema.query.BooleanBuilder;

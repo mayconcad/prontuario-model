@@ -11,7 +11,7 @@ import org.springframework.data.jpa.repository.support.QueryDslJpaRepository;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import br.com.sts.ddum.domain.entities.QUnidadeContabil;
+import br.com.sts.ddum.model.entities.QUnidadeContabil;
 import br.com.sts.ddum.model.entities.UnidadeContabil;
 import br.com.sts.ddum.model.repository.interfaces.UnidadeContabilRepository;
 

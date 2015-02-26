@@ -12,7 +12,7 @@ import org.springframework.data.jpa.repository.support.QueryDslJpaRepository;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import br.com.sts.ddum.domain.entities.QUnidade;
+import br.com.sts.ddum.model.entities.QUnidade;
 import br.com.sts.ddum.model.entities.Unidade;
 import br.com.sts.ddum.model.repository.interfaces.UnidadeRepository;
 
