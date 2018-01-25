@@ -3,14 +3,14 @@
 	xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
 
-	<persistence-unit name="ddumPU">
+	<persistence-unit name="prontuarioPU">
 		<properties>
 			<property name="hibernate.hbm2ddl.auto" value="update" />
 			<property name="hibernate.default_schema" value="public"/>
 			<property name="hibernate.show_sql" value="true" />
 			<property name="hibernate.format_sql" value="true" />
 			<property name="hibernate.ejb.interceptor"
-				value="br.com.sts.ddum.model.interceptors.SystemInterceptor" />
+				value="br.com.saude.prontuario.model.interceptors.SystemInterceptor" />
 		</properties>
 
 	</persistence-unit>
