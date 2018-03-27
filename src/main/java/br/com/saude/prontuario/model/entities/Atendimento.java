@@ -60,6 +60,11 @@ public class Atendimento extends BaseEntity{
 //	Qantidade desta sessão por atendimento
 	private int quantidade;
 	
+	@Column
+	private int quantidadesala1;
+	
+	@Column
+	private int quantidadesala2;	
 	
 
 	public Paciente getPaciente() {
@@ -148,6 +153,22 @@ public class Atendimento extends BaseEntity{
 
 	public void setQuantidade(int quantidade) {
 		this.quantidade = quantidade;
+	}
+
+	public int getQuantidadesala1() {
+		return quantidadesala1;
+	}
+
+	public void setQuantidadesala1(int quantidadesala1) {
+		this.quantidadesala1 = quantidadesala1;
+	}
+
+	public int getQuantidadesala2() {
+		return quantidadesala2;
+	}
+
+	public void setQuantidadesala2(int quantidadesala2) {
+		this.quantidadesala2 = quantidadesala2;
 	}	
 
 }

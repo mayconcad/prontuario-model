@@ -28,6 +28,9 @@ public class Paciente extends BaseEntity{
 	private String uf;
 	
 	@Temporal(TemporalType.TIMESTAMP)
+	private Date dataNascimento;
+	
+	@Temporal(TemporalType.TIMESTAMP)
 	private Date dataCadastro;
 	
 	@Temporal(TemporalType.TIMESTAMP)
@@ -105,6 +108,14 @@ public class Paciente extends BaseEntity{
 
 	public void setFone(String fone) {
 		this.fone = fone;
+	}
+
+	public Date getDataNascimento() {
+		return dataNascimento;
+	}
+
+	public void setDataNascimento(Date dataNascimento) {
+		this.dataNascimento = dataNascimento;
 	}
 
 	public Date getDataCadastro() {
