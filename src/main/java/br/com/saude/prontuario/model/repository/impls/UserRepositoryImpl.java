@@ -74,7 +74,7 @@ public class UserRepositoryImpl extends QueryDslJpaRepository<User, Long>
 					params.get("name").toString().toLowerCase()));
 		if (params.containsKey("username"))
 			predicate.and(user.username.lower().like(
-					params.get("userName").toString().toLowerCase()));
+					params.get("username").toString().toLowerCase()));
 		if (params.containsKey("dataInicial")
 				&& !params.containsKey("dataFinal"))
 			predicate

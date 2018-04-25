@@ -18,54 +18,54 @@ import javax.validation.constraints.Size;
 import org.hibernate.validator.constraints.NotBlank;
 
 @Entity
-public class Atendimento extends BaseEntity{
+public class Atendimento extends BaseEntity {
 
-	private static final long serialVersionUID = 3940210640720766782L;	
-	
-	
+	private static final long serialVersionUID = 3940210640720766782L;
+
 	@ManyToOne
-	private Paciente paciente;	
+	private Paciente paciente;
 
-	@OneToMany(cascade=CascadeType.ALL, fetch = FetchType.EAGER )   
+	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
 	private List<Sessao> sessoes;
-	
-	@OneToOne   
+
+	@OneToOne
 	private TipoAtendimento tipoAtendimento;
-	
+
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date dataAtendimento;
-	
+
 	@Column
 	private String descricao;
-	
+
 	@Column
 	private String observacao;
-	
-	//total de atendimentos
+
+	// total de atendimentos
 	@Column
 	private int total;
-	
-	@Temporal( TemporalType.TIMESTAMP )
+
+	@Temporal(TemporalType.TIMESTAMP)
 	@NotNull
 	private Date dataInicio;
-	
-	@Temporal( TemporalType.TIMESTAMP )
+
+	@Temporal(TemporalType.TIMESTAMP)
 	@NotNull
 	private Date dataFinal;
-	
+
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date dataCadastro;
-	
+
 	@Column
-//	Qantidade desta sessão por atendimento
+	// Qantidade desta sessão por atendimento
 	private int quantidade;
-	
+
 	@Column
 	private int quantidadesala1;
-	
+
 	@Column
-	private int quantidadesala2;	
-	
+	private int quantidadesala2;
+
+	private String log;
 
 	public Paciente getPaciente() {
 		return paciente;
@@ -169,6 +169,14 @@ public class Atendimento extends BaseEntity{
 
 	public void setQuantidadesala2(int quantidadesala2) {
 		this.quantidadesala2 = quantidadesala2;
-	}	
+	}
+
+	public String getLog() {
+		return log;
+	}
+
+	public void setLog(String log) {
+		this.log = log;
+	}
 
 }
